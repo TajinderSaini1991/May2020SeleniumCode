@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM Automation Test Regression Suite"  thread-count="3" parallel="tests" verbose="2">
+	<test name="CRM App Testing--Chrome">
+	<parameter name="browser" value="chrome">  </parameter>
+		<classes>
+			<class name="com.myTest.LoginPageTest" />
+			<class name="com.myTest.HomePageTest" />
+		</classes>
+	</test>
+	<test name="CRM App Testing-- FireFox">
+	<parameter name="browser" value="firefox">    </parameter>
+		<classes>
+			<class name="com.myTest.LoginPageTest" />
+			<class name="com.myTest.HomePageTest" />
+		</classes>
+	</test>
+</suite> 
+ 
